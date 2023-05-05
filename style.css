@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+display:grid;
+grid-template-columns: 1fr 3fr;
+}
+
+.side-bar{
+   background-color: #3f76ec;
+}
+
+.admin-board{
+   background-color: ;
+}
