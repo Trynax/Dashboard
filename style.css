@@ -5,18 +5,21 @@
 body{
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .container{
 display:grid;
-grid-template-columns: 1fr 2.5fr;
+grid-template-columns: auto 1fr;
 grid-template-rows: 100vh;
 }
 
 .side-bar{
    background-color: #3f76ec;
    display: grid;
-   grid-template-rows: 13vh 39vh 26vh
+   grid-template-rows: 13vh 39vh 26vh;
+   place-items: start;
+   padding-right: 60px;
    
 }
 .sidebar-heading{
@@ -24,7 +27,7 @@ grid-template-rows: 100vh;
 }
 
 .admin-board{
-   background-color: ;
+ 
 }
 
 .dash-logo{
@@ -42,7 +45,7 @@ grid-template-rows: 100vh;
 
 .sidebar-heading{
   display: flex;
-  justify-content: center;
+  margin-left: 80px;
 }
 
 ul{
@@ -57,9 +60,218 @@ ul{
 ul > li{
   font-size: 20px;
   margin-bottom: 20px;
+  margin-left: -10px;
   
 }
 
 ul > li > span{
   margin-right: 15px;
+  font-size: 25px;
+}
+
+.admin-board{
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.board-header{
+ 
+}
+
+.header-top{
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+input{
+  height: 15px;
+  padding-right: 65vh;
+
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(180, 180, 180);
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+}
+
+.notification-bar{
+  width: 20vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-right: 70px;
+  align-items: center;
+}
+
+.search-icon{
+  font-size: 20px;
+
+}
+
+.admin-name{
+  margin: 0;
+}
+.profile{
+  font-size: 40px;
+}
+
+.admin-profile{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+
+.header-bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+ align-items: center;
+}
+
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+  width: 40vh;
+}
+
+.profile-details{
+  display: flex;
+  align-items: center;
+  width: 40vh;
+}
+
+.greet-admin{
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.greet-admin > p{
+  margin: 0;
+  padding: 5px;
+}
+
+.greetings{
+  margin-bottom: 200px;
+}
+
+
+.greet-admin > .name{
+  font-size: 20px;
+}
+
+.actions > button{
+  padding: 10px 40px;
+  border:none;
+  background-color: #3f76ec;
+  color: white;
+  border-radius: 20px;
+
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.main-board{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 25px;
+  background-color: rgba(231, 231, 231, 0.808);
+}
+
+.card{
+  border-left: 5px solid rgb(255, 72, 0);
+  border-radius: 3px;
+  padding: 30px;
+  background-color: white;
+}
+
+.card > h1  p{
+  margin: 0;
+}
+
+.announcement-card{
+
+}
+
+.trending-card{
+
+}
+
+.announce-trends{
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+
+.alerts{
+  display: grid;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.alert-card-1{
+  content:"";
+   border-bottom: 2px solid rgb(209, 207, 207);
+   width:100%;
+}
+
+.alert-card-1 > h4{
+  margin-bottom: -15px;
+}
+
+.alert-card > h4{
+  margin-bottom: -15px;
+}
+
+.trends-cards{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.trends-cards > div{
+  display: flex;
+   align-items: center;
+   justify-content: start;
+}
+
+.trend-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.trend-info > h5{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.trend-info > p {
+  margin: 0;
+  color: gray;
+}
+
+.trend-card{
+  margin-bottom: 30px;
+}
+
+.trend-card:last-child{
+  margin-bottom: 0px;
 }
