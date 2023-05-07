@@ -1,17 +1,12 @@
-:root{
-  --sidebar-space: 
-}
-
 body{
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .container{
 display:grid;
 grid-template-columns: auto 1fr;
-grid-template-rows: 100vh;
+grid-template-rows: 100vh ;
 }
 
 .side-bar{
@@ -22,13 +17,7 @@ grid-template-rows: 100vh;
    padding-right: 60px;
    
 }
-.sidebar-heading{
- 
-}
 
-.admin-board{
- 
-}
 
 .dash-logo{
   font-size: 40px;
@@ -74,9 +63,6 @@ ul > li > span{
   grid-template-rows: 1fr 4fr;
 }
 
-.board-header{
- 
-}
 
 .header-top{
   display: flex;
@@ -179,14 +165,15 @@ input{
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
 }
 
 .main-board{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 25px;
+  padding: 20px;
   background-color: rgba(231, 231, 231, 0.808);
+  height: 80vh;
 }
 
 .card{
@@ -200,18 +187,13 @@ input{
   margin: 0;
 }
 
-.announcement-card{
 
-}
-
-.trending-card{
-
-}
 
 .announce-trends{
   display: grid;
-  padding: 30px;
-  grid-template-rows: 1fr 1fr;
+  padding: 25px;
+  height: 70vh;
+  grid-template-rows:35vh 35vh;
 }
 
 
@@ -275,3 +257,5 @@ input{
 .trend-card:last-child{
   margin-bottom: 0px;
 }
+
+
